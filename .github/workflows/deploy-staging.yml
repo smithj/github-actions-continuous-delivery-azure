@@ -1,10 +1,8 @@
 name: Stage the app
 
 on: 
-  label:
-    types:
-      - created
-
+  pull_request:
+    types: [labeled]
 
 jobs:
   build:
